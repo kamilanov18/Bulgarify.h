@@ -52,6 +52,7 @@
 #define указател *
 #define достъпи_стойността_на *
 #define по_равно *=
+#define наследява_от :
 
 #define константен const
 #define структура struct
@@ -74,4 +75,7 @@
 #define реален_тип float
 #define двоен_реален_тип double
 #define безтипов void
+
 #define този this
+#define стандартен std
+#define край_на_ред endl
