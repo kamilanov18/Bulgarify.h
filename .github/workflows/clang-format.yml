@@ -1,0 +1,33 @@
+name: Test clang-format compliance
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  clang-format:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      
+      - name: Run clang-format lint
+        uses: DoozyX/clang-format-lint-action@v0.12
+        with:
+          # Source folder to check formatting
+          source: .
+          clangFormatVersion: 11
+          inplace: True
+      - name: Commit reformatted files
+        uses: EndBug/add-and-commit@v7
+        with:
+          default_author: github_actions
+          message: 'Fix formatting errors'
