@@ -42,6 +42,7 @@
 #define побитово_изместване_надясно_равно >>=
 #define побитово_и &
 #define псевдоним &
+#define адрес_на &
 #define побитово_и_равно &=
 #define побитово_или |
 #define побитово_или_равно |=
@@ -75,6 +76,9 @@
 #define реален_тип float
 #define двоен_реален_тип double
 #define безтипов void
+#define вярно true
+#define грешно false
+#define нулев_показател nullptr
 
 #define този this
 #define стандартен std
