@@ -1,5 +1,4 @@
 #pragma once
-#include <string>
 
 #define типова_дефиниция typedef
 #define използвайки using
@@ -53,6 +52,7 @@
 #define достъпи_стойността_на *
 #define по_равно *=
 #define наследява_от :
+#define разрешаване_на_обхват ::
 
 #define константен const
 #define структура struct
@@ -69,7 +69,7 @@
 #define къс short
 #define беззнаков unsigned
 #define знаков signed
-#define низ std::string
+#define низ string
 #define целочислен_тип int
 #define символ char
 #define реален_тип float
