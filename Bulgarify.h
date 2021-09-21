@@ -1,5 +1,6 @@
 #pragma once
 
+#define типово_име typename
 #define типова_дефиниция typedef
 #define използвайки using
 #define имево_пространство namespace
@@ -75,6 +76,7 @@
 #define реален_тип float
 #define двоен_реален_тип double
 #define безтипов void
+#define булев_тип bool
 #define вярно true
 #define грешно false
 #define нулев_показател nullptr
