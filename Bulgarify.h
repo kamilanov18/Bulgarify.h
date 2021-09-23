@@ -79,7 +79,7 @@
 #define булев_тип bool
 #define вярно true
 #define грешно false
-#define нулев_показател nullptr
+#define нулев_указател nullptr
 
 #define този this
 #define стандартен std
