@@ -16,6 +16,13 @@
 #define хвърли throw
 #define пробвай try
 #define хвани catch
+#define авто auto
+#define изброим enum
+#define продължи continue
+#define счупи break
+#define превключвател switch
+#define случай case
+#define по_подразбиране default
 
 #define и and
 #define или or
@@ -34,7 +41,9 @@
 #define минус -
 #define минус_равно -=
 #define плюс_плюс ++
+#define инкрементирай ++
 #define минус_минус --
+#define декрементирай --
 #define вмъкване <<
 #define побитово_изместване_наляво <<
 #define побитово_изместване_наляво_равно <<=
@@ -77,6 +86,7 @@
 #define двоен_реален_тип double
 #define безтипов void
 #define булев_тип bool
+#define размерен_тип size_t
 #define вярно true
 #define грешно false
 #define нулев_указател nullptr
