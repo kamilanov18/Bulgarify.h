@@ -5,17 +5,17 @@ namespace BulgarifyCs
 {
     public static class BulgarifyString
     {
-        public static bool Съдържа(this string str, String value, StringComparison comparisonType)
+        public static bool Съдържа(this string низ, String value, StringComparison ТипНаСравнение)
         {
-            return str.Contains(value, comparisonType);
+            return низ.Contains(value, ТипНаСравнение);
         }
-        public static bool Съдържа(this string str, char value, StringComparison comparisonType)
+        public static bool Съдържа(this string низ, char value, StringComparison ТипНаСравнение)
         {
-            return str.Contains(value, comparisonType);
+            return низ.Contains(value, ТипНаСравнение);
         }
-        public static bool Съдържа(this string str, char value)
+        public static bool Съдържа(this string низ, char стойност)
         {
-            return str.Contains(value);
+            return низ.Contains(стойност);
         }
         public static bool Съдържа(this string str, String value)
         {
@@ -60,6 +60,57 @@ namespace BulgarifyCs
         public static int ПозицияНа(this string str, char value)
         {
             return str.IndexOf(value);
+        }
+
+
+        public static String[] Раздели(this string str, String[]? separator, int count, StringSplitOptions options)
+        {
+            return str.Split(separator, count, options);
+        }
+
+        public static String[] Раздели(this string str, String? separator, int count, StringSplitOptions options = StringSplitOptions.None)
+        {
+            return str.Split(separator, count, options);
+        }
+
+        public static String[] Раздели(this string str, String[]? separator, StringSplitOptions options)
+        {
+            return str.Split(separator, options);
+        }
+
+        public static String[] Раздели(this string str, char[]? separator, int count, StringSplitOptions options)
+        {
+            return str.Split(separator, count, options);
+        }
+
+        public static String[] Раздели(this string str, String? separator, StringSplitOptions options = StringSplitOptions.None)
+        {
+            return str.Split(separator, options);
+        }
+
+        public static String[] Раздели(this string str, char[]? separator, StringSplitOptions options)
+        {
+            return str.Split(separator, options);
+        }
+
+        public static String[] Раздели(this string str, char separator, StringSplitOptions options = StringSplitOptions.None)
+        {
+            return str.Split(separator, options);
+        }
+
+        public static String[] Раздели(this string str, params char[]? separator)
+        {
+            return str.Split(separator);
+        }
+
+        public static String[] Раздели(this string str, char[]? separator, int count)
+        {
+            return str.Split(separator, count);
+        }
+
+        public static String[] Раздели(this string str, char separator, int count, StringSplitOptions options = StringSplitOptions.None)
+        {
+            return str.Split(separator, count, options);
         }
     }
 }
